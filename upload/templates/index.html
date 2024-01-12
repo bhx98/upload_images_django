@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+{%for image in images %}
+<div class="col-md-4">
+<ul>
+<h2>{{ image.title }}</h2>
+<img src="{{ image.image.url}}" class="img-responsive" alt="connect" style="max-height:400px">
+</ul>
+</div>
+{% endfor %}
+
+{% endblock %}
